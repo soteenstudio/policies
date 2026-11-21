@@ -67,3 +67,10 @@ export interface FaqGroup {
   title: string;
   items: FaqItem[];
 }
+
+export type PrincipleId = "transparent" | "control" | "secure" | "minimal";
+
+export interface PrincipleDef {
+  id: PrincipleId;
+  icon: LucideIcon;
+}

@@ -3,14 +3,20 @@ import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { policies } from "@/data/policies";
 import { recentUpdatesLimit } from "@/data/structure";
-import type { Dictionary } from "@/data/ui";
 import type { Locale } from "@/i18n/config";
 import { formatDate, renderInline } from "@/lib/format";
 import { reveal } from "@/lib/reveal";
 import { policyHref } from "@/lib/routes";
 
+type RecentUpdatesCopy = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  viewLabel: string;
+};
+
 /** Dibangun otomatis dari `versions` setiap dokumen, jadi tidak perlu diubah saat ada versi baru. */
-export function RecentUpdates({ locale, copy }: { locale: Locale; copy: Dictionary["home"]["updates"] }) {
+export function RecentUpdates({ locale, copy }: { locale: Locale; copy: RecentUpdatesCopy }) {
   const updates = policies
     .flatMap((policy) => policy.versions.map((version) => ({ policy, version })))
     .sort((a, b) => b.version.date.localeCompare(a.version.date))
