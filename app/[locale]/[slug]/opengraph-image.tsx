@@ -131,7 +131,7 @@ export default async function Image({
             ))}
           </div>
           <span style={{ fontSize: 22, color: "#71717a" }}>
-            soteenstudio.my.id
+            policies.soteenstudio.my.id
           </span>
         </div>
       </div>

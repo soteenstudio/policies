@@ -70,7 +70,7 @@ export default async function Image({ params, }: {
             fontSize: 24,
             color: "#71717a",
         }}>
-          <span>soteenstudio.my.id/{locale}</span>
+          <span>policies.soteenstudio.my.id/{locale}</span>
           <span>{doc.highlights[0]?.title}</span>
         </div>
       </div>), { ...size });
