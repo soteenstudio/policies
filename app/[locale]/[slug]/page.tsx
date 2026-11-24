@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Check, ChevronRight, Info } from "lucide-react";
+import { PolicyJsonLd } from "@/components/policy/json-ld";
 import { PolicyBlocks } from "@/components/policy/policy-blocks";
 import { Pager } from "@/components/policy/pager";
 import { PrintButton } from "@/components/policy/print-button";
@@ -9,6 +10,7 @@ import { Toc } from "@/components/policy/toc";
 import { VersionHistory } from "@/components/policy/version-history";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { siteName } from "@/data/structure";
 import { getPolicy, policies } from "@/data/policies";
 import { isDummyContent } from "@/data/site";
 import { getDictionary } from "@/data/ui";
@@ -65,6 +67,13 @@ export default async function PolicyPage({ params }: PolicyPageProps) {
 
   return (
     <article className="mx-auto max-w-7xl px-5 pb-24 pt-10 sm:px-8 sm:pt-14">
+      <PolicyJsonLd
+        locale={locale}
+        policy={policy}
+        doc={content}
+        siteName={siteName}
+      />
+
       <nav aria-label="Breadcrumb" data-print-hide>
         <ol className="flex items-center gap-1.5 text-sm text-muted-foreground">
           <li>

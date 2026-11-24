@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { FaqJsonLd } from "@/components/faq/json-ld";
 import { FaqList } from "@/components/faq/faq-list";
 import { SectionHeading } from "@/components/shared/section-heading";
+import { siteName } from "@/data/structure";
 import { faq } from "@/data/faq";
 import { getDictionary } from "@/data/ui";
 import { isLocale, locales } from "@/i18n/config";
@@ -32,6 +34,12 @@ export default async function FaqPage({ params }: FaqPageProps) {
 
   return (
     <div className="mx-auto max-w-7xl px-5 pb-24 pt-16 sm:px-8 sm:pt-24">
+      <FaqJsonLd
+        locale={locale}
+        groups={groups}
+        siteName={siteName}
+      />
+
       <div className="grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
