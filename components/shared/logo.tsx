@@ -9,15 +9,15 @@ interface LogoProps {
 }
 export function Logo({ locale, product, className }: LogoProps) {
     return (<Link href={`/${locale}`} aria-label={product ? `${site.name} ${product}` : site.name} className={cn("group inline-flex items-center gap-2.5 font-display text-lg font-semibold tracking-tight", className)}>
-      <span aria-hidden className="grid size-8 place-items-center rounded-lg bg-primary text-sm font-bold text-primary-foreground transition-transform duration-300 group-hover:-rotate-6">
-        S
-      </span>
-      <span>
-        SoTeen<span className="font-normal text-muted-foreground">Studio</span>
-      </span>
-      {product ? (<>
-          <span aria-hidden className="hidden h-5 w-px bg-border sm:block"/>
-          <span className="hidden text-base font-medium text-muted-foreground sm:block">{product}</span>
-        </>) : null}
-    </Link>);
+    <span aria-hidden className="grid size-8 place-items-center rounded-lg bg-primary text-sm font-bold text-primary-foreground transition-transform duration-300 group-hover:-rotate-6">
+      S
+    </span>
+    SoTeen<span className="font-normal text-muted-foreground">Studio</span>
+    {product ? (<>
+        <span aria-hidden className="hidden h-5 w-px bg-border sm:block"/>
+        <span className="hidden text-base font-medium text-muted-foreground sm:block">
+          {product}
+        </span>
+      </>) : null}
+  </Link>);
 }
