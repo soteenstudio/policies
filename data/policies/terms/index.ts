@@ -5,22 +5,15 @@ import { termsId } from "./id";
 export const terms: PolicyDef = {
     slug: "terms",
     icon: ScrollText,
-    effectiveDate: "2026-09-10",
+    effectiveDate: "2026-11-24",
     versions: [
         {
-            date: "2026-09-10",
+            date: "2026-11-24",
             changes: {
-                id: "Menambahkan bagian kekayaan intelektual dan perangkat lunak terbuka.",
-                en: "Added a section on intellectual property and open-source software.",
+                id: "Menulis kebijakan sesuai praktik data studio saat ini, termasuk batas usia 16+ dan persetujuan sebelum data dipakai di luar studio.",
+                en: "Wrote the policy to reflect the studio's current data practices, including the 16+ age limit and consent before data is used outside the studio.",
             },
-        },
-        {
-            date: "2025-08-01",
-            changes: {
-                id: "Versi pertama Syarat & Ketentuan.",
-                en: "First version of the Terms & Conditions.",
-            },
-        },
+        }
     ],
     content: { id: termsId, en: termsEn },
 };

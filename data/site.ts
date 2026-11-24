@@ -1,7 +1,7 @@
 export const site = {
     name: "SoTeen Studio",
-    company: { legalName: "PT SoTeen Studio Indonesia" },
-    contact: { email: "privasi@soteen.studio" },
-    address: "Jl. Contoh Raya No. 00, Denpasar, Bali, Indonesia",
+    company: { legalName: "SoTeen Studio" },
+    contact: { email: "soteenstudio@gmail.com" },
+    address: "Bali, Indonesia (Remote / No physical office)",
 } as const;
-export const isDummyContent = true;
+export const isDummyContent = false;

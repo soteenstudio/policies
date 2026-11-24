@@ -19,15 +19,15 @@ export const en: Dictionary = {
     },
     home: {
         eyebrow: "SoTeen Studio policy center",
-        title: "Privacy & Terms written so they can actually be understood.",
+        title: "Privacy & Terms, written to be understood.",
         highlight: "understood",
-        description: "Here you can see what data we collect, why we need it, and the ground rules for using our games and software. No tangled jargon.",
+        description: "What data we collect, why we need it, and the ground rules for using our games and software. Plain and to the point.",
         primaryCta: "Start reading",
         secondaryCta: "See the FAQ",
         cards: {
             eyebrow: "Documents",
-            title: "Every document in one place.",
-            description: "Each document has a table of contents, an effective date, and a change history you can browse.",
+            title: "All our documents, in one place.",
+            description: "Each document comes with a table of contents, an effective date, and a browsable change history.",
             readMore: "Read document",
             updated: "Effective",
         },
@@ -51,11 +51,11 @@ export const en: Dictionary = {
     faq: {
         eyebrow: "FAQ",
         title: "Frequently asked questions.",
-        description: "Short answers to what people ask most about privacy, accounts, and cookies.",
+        description: "Short answers about privacy, age limits, terms of use, open source, and cookies.",
     },
     footer: {
         rights: "All rights reserved.",
-        legalNotice: "The documents on this site apply to SoTeen Studio services.",
+        legalNotice: "The documents on this site apply to SoTeen Studio services. Usage terms and licenses for each project follow the rules of each release.",
     },
     notFound: {
         title: "Page not found.",

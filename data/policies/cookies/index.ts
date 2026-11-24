@@ -5,22 +5,15 @@ import { cookiesId } from "./id";
 export const cookies: PolicyDef = {
     slug: "cookies",
     icon: Cookie,
-    effectiveDate: "2026-11-01",
+    effectiveDate: "2026-11-24",
     versions: [
         {
-            date: "2026-11-01",
+            date: "2026-11-24",
             changes: {
-                id: "Menambahkan tabel daftar cookie dan panduan pengaturan lewat browser.",
-                en: "Added a cookie list table and browser settings guidance.",
+                id: "Menulis kebijakan sesuai praktik data studio saat ini, termasuk batas usia 16+ dan persetujuan sebelum data dipakai di luar studio.",
+                en: "Wrote the policy to reflect the studio's current data practices, including the 16+ age limit and consent before data is used outside the studio.",
             },
-        },
-        {
-            date: "2025-08-01",
-            changes: {
-                id: "Versi pertama Kebijakan Cookie.",
-                en: "First version of the Cookie Policy.",
-            },
-        },
+        }
     ],
     content: { id: cookiesId, en: cookiesEn },
 };

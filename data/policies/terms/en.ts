@@ -3,116 +3,78 @@ export const termsEn: PolicyContent = {
     title: "Terms & Conditions",
     summary: "The ground rules for using SoTeen Studio games, websites, and software.",
     intro: [
-        "These terms govern your use of {{siteName}} services. By creating an account or using our services, you agree to these terms. If you do not agree, please do not use the services.",
-        "How we handle your data is described separately in the [Privacy Policy](/privacy).",
+        "These terms govern your use of {{siteName}} services. By using our services, you agree to them. If you do not agree, please do not use the services.",
+        "{{siteName}} is an independent studio that has not yet been established as a legal entity. This document is operational transparency, not formal legal advice. How we handle data is described in the [Privacy Policy](/privacy).",
     ],
     highlights: [
-        { title: "Be good to each other", text: "Cheating, harassment, and abuse are not allowed." },
-        { title: "Your work stays yours", text: "We only ask for a limited permission to run the service." },
-        { title: "Changes are announced", text: "We notify you before material changes take effect." },
+        { title: "16+ for login", text: "Services with a login system require users to be at least 16 years old." },
+        { title: "No abuse", text: "Spam, exploitation, and anything that disrupts availability are prohibited." },
+        { title: "Experiments are as-is", text: "Experimental projects come with no guarantee and are used at your own risk." },
     ],
     sections: [
         {
             id: "acceptance",
-            title: "Acceptance and eligibility",
+            title: "Eligibility",
             blocks: [
-                { type: "p", text: "You must be at least 13 years old, or the age required by local law, to use the services. Users below the age of majority need permission from a parent or guardian." },
-                { type: "p", text: "If you use the services on behalf of an organization, you represent that you are authorized to bind that organization to these terms." },
-            ],
-        },
-        {
-            id: "accounts",
-            title: "Your account",
-            blocks: [
-                { type: "p", text: "You are responsible for activity on your account. To keep it safe:" },
-                {
-                    type: "ul",
-                    items: [
-                        "Use a strong password and do not share it.",
-                        "Tell us right away if you suspect someone else has accessed your account.",
-                        "Provide accurate account information and update it when it changes.",
-                    ],
-                },
+                { type: "p", text: "Users of services or platforms with a login system must be at least 16 years old, as the studio's service limit." },
+                { type: "p", text: "You must also meet the age requirements and parental or guardian consent or supervision rules under child protection laws in your country or region." },
             ],
         },
         {
             id: "acceptable-use",
-            title: "Acceptable use",
+            title: "Acceptable use and abuse prevention",
             blocks: [
-                { type: "p", text: "When using the services, you agree not to:" },
+                { type: "p", text: "For open-source services or platforms, or those that provide an API or binary download links (such as cURL access), users and developers must not:" },
                 {
                     type: "ul",
                     items: [
-                        "Cheat, exploit bugs for advantage, or use third-party software that interferes with gameplay.",
-                        "Harass, threaten, or discriminate against other users.",
-                        "Interfere with or attempt to breach the security of our services.",
-                        "Use the services for any unlawful purpose.",
+                        "Spam or abuse the service.",
+                        "Exploit the service.",
+                        "Take actions that lead to DDoS or otherwise disrupt service availability.",
                     ],
                 },
-                {
-                    type: "callout",
-                    tone: "warning",
-                    title: "Violations may lead to account restrictions",
-                    text: "Depending on severity, we may issue a warning, restrict features, or suspend the account.",
-                },
-            ],
-        },
-        {
-            id: "content",
-            title: "Your content",
-            blocks: [
-                { type: "p", text: "You keep ownership of the content you create. To let the services work, you grant {{siteName}} a non-exclusive, royalty-free, limited license to store, display, and process that content solely to operate the services." },
             ],
         },
         {
             id: "ip",
-            title: "Intellectual property and open source",
+            title: "Open source and attribution",
             blocks: [
-                { type: "p", text: "{{siteName}} trademarks, logos, and visual assets are protected by law. Some of our software is released as open source and is governed by its own license, listed in the relevant project repository." },
+                { type: "p", text: "Projects in the soteenstudio GitHub organization licensed under MIT or Apache-2.0 are open source and may be used according to the terms of their respective licenses." },
+                { type: "p", text: "If you fork or create a derivative work, you must include credit or attribution to {{siteName}}." },
+            ],
+        },
+        {
+            id: "experimental",
+            title: "Experimental projects",
+            blocks: [
+                { type: "p", text: "Experimental projects are provided for testing and **as is**. They are not meant for general public use or stable production." },
                 {
-                    type: "table",
-                    head: ["Type of work", "Terms"],
-                    rows: [
-                        ["Games and visual assets", "Copyright held by {{siteName}}; use is limited as set out in these terms"],
-                        ["Open-source software", "Follows the license in each repository"],
-                    ],
+                    type: "callout",
+                    tone: "warning",
+                    title: "No reliability guarantee",
+                    text: "Experimental projects may change or be discontinued at any time. Any risk of using them is yours.",
                 },
             ],
         },
         {
             id: "termination",
-            title: "Termination",
+            title: "Access restrictions",
             blocks: [
-                { type: "p", text: "You may stop using the services and delete your account at any time. We may suspend or terminate access if you breach these terms, with reasonable notice unless law or security requires immediate action." },
-            ],
-        },
-        {
-            id: "disclaimer",
-            title: "Warranties and limitation of liability",
-            blocks: [
-                { type: "p", text: "The services are provided **as is**. We work to keep them reliable, but cannot guarantee they will be free of interruptions or errors." },
-                { type: "p", text: "To the extent permitted by law, {{siteName}}'s liability for indirect or consequential losses is limited. These terms do not limit rights that cannot be excluded under applicable law." },
-            ],
-        },
-        {
-            id: "law",
-            title: "Governing law",
-            blocks: [
-                { type: "p", text: "These terms are governed by the laws of the Republic of Indonesia. We will first try to resolve disputes amicably before turning to the courts in Denpasar." },
+                { type: "p", text: "Use that violates these terms, including the abuse described above, may lead to restricted access to the affected service." },
             ],
         },
         {
             id: "changes",
             title: "Changes to these terms",
             blocks: [
-                { type: "p", text: "We may update these terms. For material changes, we will notify you at least 14 days before they take effect. By continuing to use the services afterwards, you accept the changes." },
+                { type: "p", text: "These terms may be updated as our services, products, or the studio's managing party or entity change. When needed, we will update the effective date shown on this page." },
             ],
         },
         {
             id: "contact",
             title: "Contact us",
             blocks: [
-                { type: "p", text: "Questions about these terms can be sent to [{{email}}](mailto:{{email}}) or to {{company}}, {{address}}." },
+                { type: "p", text: "Questions about these terms can be sent to [{{email}}](mailto:{{email}})." },
             ],
         },
     ],

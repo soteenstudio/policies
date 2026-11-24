@@ -1,15 +1,15 @@
 import type { PolicyContent } from "@/types";
 export const privacyEn: PolicyContent = {
     title: "Privacy Policy",
-    summary: "What data we collect, why we need it, and how you can control it.",
+    summary: "What data may be used, for what purposes, and how you can ask about it.",
     intro: [
-        "When you use {{siteName}} games, websites, and software, you trust us with some of your information. This policy explains what we collect, what we use it for, and the choices you have.",
-        "We've tried to write it as simply as possible. If a term is unclear, see [Key terms](#key-terms) or the [FAQ](/faq).",
+        "{{siteName}} is an independent studio that has not yet been established as a legal entity. This document is operational transparency for our projects, not formal legal advice.",
+        "We aim to use as little data as possible. If a term is unclear, see [Key terms](#key-terms) or the [FAQ](/faq).",
     ],
     highlights: [
-        { title: "Only what's needed", text: "We collect only the data required to run the service." },
-        { title: "Never sold", text: "We do not sell your personal data to anyone." },
-        { title: "You're in control", text: "Access, download, or delete your data with a single request." },
+        { title: "Minimal data", text: "Data is used only for reasonable purposes and kept to what is needed." },
+        { title: "Never sold", text: "We do not sell your data to third parties." },
+        { title: "Ask us anytime", text: "Contact us to ask about, correct, or delete your data." },
     ],
     sections: [
         {
@@ -19,9 +19,9 @@ export const privacyEn: PolicyContent = {
                 {
                     type: "dl",
                     items: [
-                        { term: "Personal data", description: "Information that can identify you, such as your name, email address, or account ID." },
-                        { term: "Services", description: "All games, websites, and software operated by {{siteName}}." },
-                        { term: "Data processor", description: "A third party that helps us process data on our instructions, such as a hosting provider." },
+                        { term: "Data", description: "Information tied to you or your use of our services, when we collect or use any." },
+                        { term: "Services", description: "The games, websites, software, and platforms operated by {{siteName}}." },
+                        { term: "Studio ecosystem", description: "The services and products {{siteName}} runs itself, which may share data internally." },
                     ],
                 },
             ],
@@ -30,21 +30,12 @@ export const privacyEn: PolicyContent = {
             id: "data-we-collect",
             title: "Data we collect",
             blocks: [
-                { type: "p", text: "The data we collect depends on which service you use. In general, there are three groups:" },
-                {
-                    type: "table",
-                    head: ["Group", "Examples", "Source"],
-                    rows: [
-                        ["Data you provide", "Username, email address, content of support messages", "You"],
-                        ["Usage data", "Device type, app version, error logs, game progress", "Collected automatically"],
-                        ["Data from others", "Profile ID from the platform a game is released on", "Partner platforms"],
-                    ],
-                },
+                { type: "p", text: "What we collect depends on the service you use. Where a service collects or uses data, we keep it to the minimum needed for that service to work." },
                 {
                     type: "callout",
                     tone: "info",
-                    title: "We don't ask for sensitive data",
-                    text: "We do not ask for ID numbers, health data, or precise location to use our services.",
+                    title: "Data is used only if it is needed",
+                    text: "Many of our projects, especially open-source ones, may not require any data from you at all.",
                 },
             ],
         },
@@ -52,14 +43,14 @@ export const privacyEn: PolicyContent = {
             id: "how-we-use",
             title: "How we use data",
             blocks: [
-                { type: "p", text: "We use your data for the following purposes, and only these:" },
+                { type: "p", text: "If data is used, it is used only for the following purposes:" },
                 {
                     type: "ul",
                     items: [
-                        "**Running the services**, for example saving game progress and recovering accounts.",
-                        "**Keeping things safe**, including detecting cheating, abuse, and unauthorized access.",
-                        "**Improving our products** by analyzing error logs and summarized usage patterns.",
-                        "**Communicating with you** about important updates and support requests.",
+                        "**Operations**, so our services run as intended.",
+                        "**Security and anti-abuse**, to detect and prevent misuse of our services.",
+                        "**Feature improvement**, within reasonable limits and with minimal data.",
+                        "**Internal synchronization** across the {{siteName}} studio ecosystem.",
                     ],
                 },
             ],
@@ -68,82 +59,52 @@ export const privacyEn: PolicyContent = {
             id: "sharing",
             title: "Sharing data with others",
             blocks: [
-                { type: "p", text: "We do not sell your personal data. We share it only in limited circumstances:" },
-                {
-                    type: "ul",
-                    items: [
-                        "With **data processors** who act on our instructions and are bound by confidentiality agreements.",
-                        "When **required by law**, for example under a valid court order.",
-                        "With **your consent**, for purposes described specifically when consent is requested.",
-                    ],
-                },
+                { type: "p", text: "We do not sell your data to third parties." },
+                { type: "p", text: "If we ever want to use data outside the studio on a voluntary basis, we will state it clearly and honestly in a consent popup **before** the data is used." },
             ],
         },
         {
             id: "retention",
             title: "How long we keep data",
             blocks: [
-                { type: "p", text: "We keep data for as long as needed for the purposes above, then delete or anonymize it." },
-                {
-                    type: "table",
-                    head: ["Data type", "Retention period"],
-                    rows: [
-                        ["Account data", "While the account is active; deleted within 30 days after account deletion"],
-                        ["Security logs", "90 days"],
-                        ["Support correspondence", "24 months after the last conversation"],
-                    ],
-                },
+                { type: "p", text: "We keep data only as long as it is needed for the purposes above. If data is no longer needed, we aim to delete it." },
             ],
         },
         {
             id: "your-rights",
             title: "Your rights and choices",
             blocks: [
-                { type: "p", text: "You can request any of the following at any time by writing to [{{email}}](mailto:{{email}}):" },
+                { type: "p", text: "You can contact the studio's official contact at [{{email}}](mailto:{{email}}) to ask about your data or make a request, such as:" },
                 {
                     type: "ol",
                     items: [
-                        "Access a copy of the personal data we hold.",
-                        "Correct inaccurate data.",
-                        "Delete your personal data, except where the law requires us to keep it.",
-                        "Restrict or object to certain processing, including withdrawing consent.",
+                        "Access data related to you.",
+                        "Correct data that is inaccurate.",
+                        "Delete relevant data.",
                     ],
                 },
-                { type: "p", text: "We will respond to your request within 30 days. Cookie settings can be changed at any time in the [Cookie Policy](/cookies#manage)." },
-            ],
-        },
-        {
-            id: "security",
-            title: "Data security",
-            blocks: [
-                { type: "p", text: "We protect data with encryption in transit and at rest, role-based access limits, and regular security reviews." },
-                {
-                    type: "callout",
-                    tone: "warning",
-                    title: "No system is completely immune",
-                    text: "If an incident affects your data, we will notify you and the relevant authorities as required by applicable rules.",
-                },
+                { type: "p", text: "Requests are handled in line with the rules that apply in your jurisdiction. Cookie settings are explained in the [Cookie Policy](/cookies#manage)." },
             ],
         },
         {
             id: "children",
-            title: "Children",
+            title: "Age and children",
             blocks: [
-                { type: "p", text: "Some of our services are played by young users. We do not knowingly collect personal data from children below the age set by local law without parental or guardian consent. If you believe your child has provided data without permission, contact us so we can delete it." },
+                { type: "p", text: "Services with a login system are for users aged 16 and above. Users must also meet the age requirements and parental or guardian consent rules under child protection laws in their country or region. See [Eligibility](/terms#acceptance)." },
             ],
         },
         {
             id: "changes",
             title: "Changes to this policy",
             blocks: [
-                { type: "p", text: "We may update this policy from time to time. Material changes will be announced on this page and, where appropriate, by email. Version history is available at the bottom of the page." },
+                { type: "p", text: "We may update this policy as our services, products, or the studio itself change. When needed, we will update the effective date shown on this page. Version history is available at the bottom of the page." },
             ],
         },
         {
             id: "contact",
             title: "Contact us",
             blocks: [
-                { type: "p", text: "Data controller: **{{company}}**, {{address}}. Privacy questions can be sent to [{{email}}](mailto:{{email}})." },
+                { type: "p", text: "Privacy questions and data requests can be sent to [{{email}}](mailto:{{email}})." },
             ],
         },
     ],

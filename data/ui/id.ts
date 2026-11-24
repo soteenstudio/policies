@@ -19,15 +19,15 @@ export const id: Dictionary = {
     },
     home: {
         eyebrow: "Pusat kebijakan SoTeen Studio",
-        title: "Privasi & Persyaratan yang ditulis agar benar-benar bisa dipahami.",
+        title: "Privasi & Persyaratan, ditulis agar mudah dipahami.",
         highlight: "dipahami",
-        description: "Di sini Anda bisa melihat data apa yang kami kumpulkan, mengapa kami membutuhkannya, dan aturan main saat memakai game serta perangkat lunak kami. Tanpa istilah berbelit.",
+        description: "Data apa yang kami kumpulkan, mengapa kami membutuhkannya, dan aturan main untuk memakai game serta perangkat lunak kami. Jelas dan langsung ke inti.",
         primaryCta: "Mulai membaca",
         secondaryCta: "Lihat FAQ",
         cards: {
             eyebrow: "Dokumen",
-            title: "Semua dokumen dalam satu tempat.",
-            description: "Setiap dokumen punya daftar isi, tanggal berlaku, dan riwayat perubahan yang bisa Anda telusuri.",
+            title: "Semua dokumen kami, dalam satu tempat.",
+            description: "Setiap dokumen dilengkapi daftar isi, tanggal berlaku, dan riwayat perubahan yang dapat ditelusuri.",
             readMore: "Baca dokumen",
             updated: "Berlaku sejak",
         },
@@ -51,11 +51,11 @@ export const id: Dictionary = {
     faq: {
         eyebrow: "FAQ",
         title: "Pertanyaan yang sering diajukan.",
-        description: "Jawaban singkat untuk hal-hal yang paling sering ditanyakan tentang privasi, akun, dan cookie.",
+        description: "Jawaban singkat seputar privasi, batas usia, aturan penggunaan, open source, dan cookie.",
     },
     footer: {
         rights: "Hak cipta dilindungi.",
-        legalNotice: "Dokumen di situs ini berlaku untuk layanan SoTeen Studio.",
+        legalNotice: "Dokumen di situs ini berlaku untuk layanan SoTeen Studio. Ketentuan penggunaan dan lisensi untuk tiap proyek mengikuti aturan masing-masing rilis.",
     },
     notFound: {
         title: "Halaman tidak ditemukan.",
