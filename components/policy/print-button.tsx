@@ -1,6 +1,6 @@
 "use client";
 import { Printer } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@gaine/core";
 export function PrintButton({ label }: {
     label: string;
 }) {

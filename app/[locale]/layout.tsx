@@ -3,15 +3,14 @@ import { notFound } from "next/navigation";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { ScrollReveal } from "@/components/shared/scroll-reveal";
-import { ThemeSync } from "@/components/shared/theme-sync";
+import { ScrollReveal, ThemeSync } from "@gaine/nextjs";
 import { site } from "@/data/site";
 import { getDictionary } from "@/data/ui";
 import { isLocale, locales } from "@/i18n/config";
 import { getNavEntries } from "@/lib/nav";
-import { revealInitScript } from "@/lib/reveal-script";
-import { themeInitScript } from "@/lib/theme";
+import { revealInitScript, themeInitScript } from "@gaine/core";
 import "../globals.css";
+import "@gaine/core/reveal.css";
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const display = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 interface LocaleLayoutProps {

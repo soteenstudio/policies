@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { Button } from "@/components/ui/button";
+import { Button } from "@gaine/core";
 import { getDictionary } from "@/data/ui";
 import { defaultLocale, isLocale } from "@/i18n/config";
 export default function NotFound() {

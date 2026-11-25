@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight, type LucideIcon } from "lucide-react";
-import { reveal } from "@/lib/reveal";
-import { cn } from "@/lib/utils";
+import { reveal, cn } from "@gaine/core";
 interface PolicyCardProps {
     href: string;
     icon: LucideIcon;

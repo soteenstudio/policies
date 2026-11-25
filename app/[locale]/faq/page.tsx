@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FaqJsonLd } from "@/components/faq/json-ld";
 import { FaqList } from "@/components/faq/faq-list";
-import { SectionHeading } from "@/components/shared/section-heading";
+import { SectionHeading, reveal } from "@gaine/core";
 import { siteName } from "@/data/structure";
 import { faq } from "@/data/faq";
 import { getDictionary } from "@/data/ui";
 import { isLocale, locales } from "@/i18n/config";
-import { reveal } from "@/lib/reveal";
 interface FaqPageProps {
     params: Promise<{
         locale: string;

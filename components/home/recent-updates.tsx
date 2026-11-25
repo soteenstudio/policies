@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { SectionHeading } from "@/components/shared/section-heading";
+import { SectionHeading, reveal } from "@gaine/core";
 import { policies } from "@/data/policies";
 import { recentUpdatesLimit } from "@/data/structure";
 import type { Locale } from "@/i18n/config";
 import { formatDate, renderInline } from "@/lib/format";
-import { reveal } from "@/lib/reveal";
 import { policyHref } from "@/lib/routes";
 type RecentUpdatesCopy = {
     eyebrow: string;

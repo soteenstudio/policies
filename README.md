@@ -107,3 +107,17 @@ Tambah objek pada grup yang ada di `data/faq.ts`, atau tambah grup baru. Menu gr
 - Tema terang/gelap memakai class `dark` + `localStorage`, tanpa kilatan saat muat.
 - Tombol "Cetak / simpan PDF" memakai `window.print()`; gaya cetak ada di `app/globals.css` (header, footer, dan elemen `data-print-hide` disembunyikan).
 - `app/[locale]/layout.tsx` adalah root layout (memuat `<html>`), sehingga tidak ada `app/layout.tsx` terpisah.
+
+## Gaine
+
+Bagian UI/tema/i18n yang sama dengan situs lain sekarang berasal dari lib mandiri **Gaine**
+(`@gaine/core` + `@gaine/nextjs`, repo `../gaine`). Token warna, preset Tailwind, animasi reveal,
+Button/Badge/Dropdown/SectionHeading/ThemeToggle, `cn`, `reveal`, skrip tema, proxy locale,
+robots/sitemap, dan template OG tidak lagi disalin ke sini.
+
+Untuk dev lokal (sebelum Gaine dipublish): build Gaine dulu, lalu `pnpm install` di sini.
+
+```bash
+cd ../gaine && pnpm install && pnpm build
+cd ../<folder-ini> && pnpm install && pnpm dev
+```

@@ -1,4 +1,4 @@
-import { reveal } from "@/lib/reveal";
+import { reveal } from "@gaine/core";
 interface CtaBandProps {
     title: string;
     description: string;

@@ -8,8 +8,7 @@ import { Pager } from "@/components/policy/pager";
 import { PrintButton } from "@/components/policy/print-button";
 import { Toc } from "@/components/policy/toc";
 import { VersionHistory } from "@/components/policy/version-history";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge, Button, reveal } from "@gaine/core";
 import { siteName } from "@/data/structure";
 import { getPolicy, policies } from "@/data/policies";
 import { isDummyContent } from "@/data/site";
@@ -17,7 +16,6 @@ import { getDictionary } from "@/data/ui";
 import { isLocale, locales } from "@/i18n/config";
 import { formatDate, renderInline } from "@/lib/format";
 import { getPageEntries } from "@/lib/nav";
-import { reveal } from "@/lib/reveal";
 import { homeHref } from "@/lib/routes";
 interface PolicyPageProps {
     params: Promise<{

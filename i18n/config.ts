@@ -1,10 +1,13 @@
-export const locales = ["id", "en"] as const;
+import { defineLocales } from "@gaine/core";
+
+const kit = defineLocales({
+    locales: ["id", "en"],
+    defaultLocale: "id",
+    labels: {
+        id: "Bahasa Indonesia",
+        en: "English",
+    },
+});
+
+export const { locales, defaultLocale, localeLabels, isLocale } = kit;
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "id";
-export const localeLabels: Record<Locale, string> = {
-    id: "Bahasa Indonesia",
-    en: "English",
-};
-export function isLocale(value: string): value is Locale {
-    return (locales as readonly string[]).includes(value);
-}

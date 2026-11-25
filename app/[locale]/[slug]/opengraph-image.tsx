@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { renderOgFallback } from "@gaine/nextjs/og";
 import { getPolicy } from "@/data/policies";
 import { siteName } from "@/data/structure";
 import { isLocale } from "@/i18n/config";
@@ -14,21 +15,8 @@ export default async function Image({ params, }: {
     const { locale, slug } = await params;
     const safeLocale = isLocale(locale) ? locale : "en";
     const policy = getPolicy(slug);
-    if (!policy) {
-        return new ImageResponse((<div style={{
-                height: "100%",
-                width: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "#09090b",
-                color: "#fafafa",
-                fontSize: 48,
-                fontWeight: 700,
-            }}>
-          {siteName}
-        </div>), { ...size });
-    }
+    if (!policy)
+        return renderOgFallback(siteName);
     const doc = policy.content[safeLocale] ?? policy.content.id;
     const label = safeLocale === "id" ? "Dokumen Kebijakan" : "Policy Document";
     return new ImageResponse((<div style={{

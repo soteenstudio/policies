@@ -1,6 +1,6 @@
 import { CircleHelp } from "lucide-react";
 import { PolicyCard } from "@/components/home/policy-card";
-import { SectionHeading } from "@/components/shared/section-heading";
+import { SectionHeading } from "@gaine/core";
 import { policies } from "@/data/policies";
 import type { Dictionary } from "@/data/ui";
 import type { Locale } from "@/i18n/config";

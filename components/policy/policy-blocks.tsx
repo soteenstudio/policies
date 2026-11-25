@@ -1,7 +1,7 @@
 import { Info, TriangleAlert } from "lucide-react";
 import { renderInline } from "@/lib/format";
 import type { Locale } from "@/i18n/config";
-import { cn } from "@/lib/utils";
+import { cn } from "@gaine/core";
 import type { PolicyBlock } from "@/types";
 interface PolicyBlocksProps {
     blocks: PolicyBlock[];

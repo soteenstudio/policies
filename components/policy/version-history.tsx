@@ -1,8 +1,7 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge, reveal } from "@gaine/core";
 import type { Dictionary } from "@/data/ui";
 import type { Locale } from "@/i18n/config";
 import { formatDate, renderInline } from "@/lib/format";
-import { reveal } from "@/lib/reveal";
 import type { PolicyVersion } from "@/types";
 interface VersionHistoryProps {
     id: string;

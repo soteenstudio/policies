@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, reveal } from "@gaine/core";
 import { policies } from "@/data/policies";
 import type { Dictionary } from "@/data/ui";
 import type { Locale } from "@/i18n/config";
-import { reveal } from "@/lib/reveal";
 import { faqHref, policyHref } from "@/lib/routes";
 function renderTitle(title: string, highlight: string) {
     const [before, after] = title.split(highlight);

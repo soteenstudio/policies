@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { NavEntry } from "@/lib/nav";
-import { cn } from "@/lib/utils";
+import { cn } from "@gaine/core";
 interface PagerProps {
     previous?: NavEntry;
     next?: NavEntry;

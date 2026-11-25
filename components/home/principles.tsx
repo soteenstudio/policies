@@ -1,7 +1,6 @@
-import { SectionHeading } from "@/components/shared/section-heading";
+import { SectionHeading, reveal } from "@gaine/core";
 import { principles } from "@/data/structure";
 import type { Dictionary } from "@/data/ui";
-import { reveal } from "@/lib/reveal";
 type PrinciplesCopy = {
     eyebrow: string;
     title: string;

@@ -4,7 +4,7 @@ import type { Dictionary } from "@/data/ui";
 import { site } from "@/data/site";
 import type { Locale } from "@/i18n/config";
 import type { NavEntry } from "@/lib/nav";
-import { reveal } from "@/lib/reveal";
+import { reveal } from "@gaine/core";
 interface FooterProps {
     locale: Locale;
     dict: Dictionary;

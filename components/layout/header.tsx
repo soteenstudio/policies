@@ -3,14 +3,12 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, ThemeToggle, cn } from "@gaine/core";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { Logo } from "@/components/shared/logo";
-import { ThemeToggle } from "@/components/shared/theme-toggle";
 import type { Dictionary } from "@/data/ui";
 import type { Locale } from "@/i18n/config";
 import type { NavEntry } from "@/lib/nav";
-import { cn } from "@/lib/utils";
 interface HeaderProps {
     locale: Locale;
     copy: Dictionary["header"];
