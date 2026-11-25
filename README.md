@@ -2,7 +2,7 @@
 
 Situs kebijakan **mandiri** (terpisah dari situs utama SoTeen Studio) dengan tampilan terinspirasi [policies.google.com](https://policies.google.com/) dan memakai desain yang sama dengan situs utama.
 
-Stack mengikuti `package.json` situs utama: Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS 3 · Radix UI · lucide-react · class-variance-authority.
+Stack mengikuti `package.json` situs utama: Next.js 16 (App Router, Turbopack) · React 19.2 · TypeScript · Tailwind CSS 3 · Radix UI · lucide-react · class-variance-authority.
 
 ## Menjalankan
 
@@ -10,6 +10,7 @@ Stack mengikuti `package.json` situs utama: Next.js 15 (App Router) · React 19 
 pnpm install
 pnpm dev          # http://localhost:3001
 pnpm typecheck
+pnpm lint          # ESLint CLI (next lint sudah dihapus di Next.js 16)
 pnpm build && pnpm start
 ```
 
@@ -102,7 +103,7 @@ Tambah objek pada grup yang ada di `data/faq.ts`, atau tambah grup baru. Menu gr
 
 ## Catatan teknis
 
-- Bahasa dideteksi dari header `Accept-Language` oleh `middleware.ts` (default `id`), sama seperti situs utama.
+- Bahasa dideteksi dari header `Accept-Language` oleh `proxy.ts` (default `id`; pengganti `middleware.ts` sejak Next.js 16), sama seperti situs utama.
 - Tema terang/gelap memakai class `dark` + `localStorage`, tanpa kilatan saat muat.
 - Tombol "Cetak / simpan PDF" memakai `window.print()`; gaya cetak ada di `app/globals.css` (header, footer, dan elemen `data-print-hide` disembunyikan).
 - `app/[locale]/layout.tsx` adalah root layout (memuat `<html>`), sehingga tidak ada `app/layout.tsx` terpisah.

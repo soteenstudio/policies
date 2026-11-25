@@ -9,7 +9,7 @@ function detectLocale(request: NextRequest): Locale {
     }
     return defaultLocale;
 }
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
     const hasLocale = locales.some((locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`));
     if (hasLocale)

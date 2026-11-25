@@ -9,6 +9,7 @@ import { site } from "@/data/site";
 import { getDictionary } from "@/data/ui";
 import { isLocale, locales } from "@/i18n/config";
 import { getNavEntries } from "@/lib/nav";
+import { revealInitScript } from "@/lib/reveal-script";
 import { themeInitScript } from "@/lib/theme";
 import "../globals.css";
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -38,7 +39,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         notFound();
     const dict = getDictionary(locale);
     const entries = getNavEntries(locale, dict);
-    return (<html lang={locale} className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
+    return (<html lang={locale} className={`${sans.variable} ${display.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }}/>
       </head>
@@ -53,6 +54,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           {children}
         </main>
         <Footer locale={locale} dict={dict} entries={entries}/>
+        <script dangerouslySetInnerHTML={{ __html: revealInitScript }}/>
       </body>
     </html>);
 }
